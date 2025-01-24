@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="appointmentPage">
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <form id="appointmentForm">
+            <label for="clientName">Client Name:</label>
+            <input type="text" id="clientName" name="clientName" required>
+
+            <label for="lawyer">Select Lawyer:</label>
+            <select id="lawyer" name="lawyer" required></select>
+
+            <label for="appointmentDate">Appointment Date:</label>
+            <input type="datetime-local" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
